@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>flex-layout</title>
+        <style>
+            #container{
+                display : flex;
+                margin: 0 auto;
+                justify-content: space-around;
+                width:1200px;            }
+            #left{
+                background-color: red;
+                display:flex;
+                flex:1;
+                justify-content: center;
+            }
+            #right{
+                background-color:blue;
+                flex:2;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="left">
+                <h2>Left</h2>
+            </div>
+            <div id="right">
+                <h2>Right</h2>
+            </div>
+        </div>
+    </body>
+</html>

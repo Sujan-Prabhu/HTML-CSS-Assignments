@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>bottom page</title>
+  </head>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: black;
+      color: white;
+    }
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      display: flex;
+      gap: 50px;
+    }
+    .left{
+      flex:1;
+    }
+    .left p{
+      color:#b3b3b3;
+      line-height: 1.6;
+    }
+    .column{
+      height: 200px;
+    }
+    .right{
+      flex:1;
+      display: flex;
+      justify-content: space-around;
+    }
+    .column p{
+      margin: 10px 0 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap:5px;
+    }
+    .column p img{
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container">
+        <div class="left">
+          <h2>Code in any language</h2>
+          <p>
+            VS Code supports almost every major programming language. Several ship in the box, like JavaScript,TypeScript, CSS and HTML, but extensions for others can be found in the VS Code Marketplace.
+          </p>
+        </div>
+
+      <div class="right">
+        <div class="column">
+          <p><img src="https://code.visualstudio.com/assets/home/language-js.png" >JavaScript</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-cs.png">C#</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-java.png">Java</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-markdown.png" alt="">Markdown</p>
+        </div>
+        <div class="column">
+          <p><img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="">TypeScript</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="">C++</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-json.png" alt="">JSON</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="">TypeScript</p>
+        </div>
+        <div class="column">
+          <p><img src="https://code.visualstudio.com/assets/home/language-python.png" alt="">Python</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-html.png" alt="">HTML</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-php.png" alt="">PHP</p>
+          <p><img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="">Powershell</p>
+        </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

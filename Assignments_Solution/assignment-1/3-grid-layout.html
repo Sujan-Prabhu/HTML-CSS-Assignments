@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>title</title>
+        <style>
+            .container{
+                /* height: 50px; */
+                width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 0.5em;
+            }
+            .right{
+                background-color: red;
+                display: flex;
+                align-items: center;
+            }
+            .left{
+                background-color: blue;
+                display: flex;
+                align-items: center;
+            }  
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="right"><h2>Right</h2></div>
+            <div class="left"><h2>Left</h2></div>
+        </div>
+    </body>
+</html>

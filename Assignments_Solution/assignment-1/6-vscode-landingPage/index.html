@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VS Code</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+      }
+      nav{
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 5px;
+      }
+      .left{
+        display: flex;
+      }
+      .flex{
+        display:flex;
+        align-items: center;
+        gap: 2vh;
+      }
+      .flex a{
+        color: grey;
+        font-size: 16px;
+        padding-left: 20px;
+        text-decoration: none;  
+      }
+      .flex a:hover{
+        color: white;
+      }
+      a{
+        text-decoration: none;
+      }
+      .right{
+        display: flex;
+        align-items: center;
+      }
+      .right input{
+        border-radius: 5px;
+        border: 1px solid rgb(255, 255, 255, 0.2);
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        padding: 8px;
+      }
+      .right input:hover{
+        border:1px solid white;
+      }
+      .right button{
+        background-color: #0078d4;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 7px;
+        width: 120px;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      .banner{
+        padding: 10px;
+        margin: 0 auto;
+        gap: 10px;
+        max-width: 1200px;
+        display: flex;   
+        justify-content: center; 
+        font-size: 14px;
+        color: grey;
+        background-color: black;
+      }
+      .hero{
+        background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
+        padding: 50px 20px;
+        color: white;
+      }
+      .second-box{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .second-box button{
+        display: inline-block;
+        background-color: #0078d4;
+        color: white;
+        border-radius: 5px;
+        padding: 15px 30px;       
+        font-size: 1.2em;
+        border: none;
+        transition:background-color 0.2s;
+      }
+      .second-box button:hover{
+        background-color: blue;
+      }
+      .buttonBanner{
+        padding: 10px;
+        font-size: 16px;
+        color: #9ba3b4;
+        background-color: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 32px;
+      }
+      .hero h2{
+        font-size: 3em;
+        text-align: right;
+      }
+      .lastbox{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 0;
+        width: 1200px;
+      }
+      .lastbox-left{
+        /* margin-top: 15px; */
+        flex: 1;
+        display:flex;
+        flex-direction: column;
+        font-size: 24px;
+      }
+      .lastbox-left h3{
+        margin-top: 40px;
+        margin-bottom: 5px;
+      }
+      .lastbox-left p{
+        width: 382px;
+        color: #9ba3b4;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+      .lastbox-right{
+        flex: 1;
+        display: flex;
+        gap: 20%;
+        margin-top: 5px ;
+      }
+      .column p{
+        display: flex;
+        align-items: center;
+      }
+      .column img{
+        height: 35px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div class="left">
+          <div class="flex" style="padding-right: 20px;gap: 15px;">
+            <img src="favicon.ico" height="25px">
+            <h2 style="font-size: 18px;">Visual Studio Code</h2>
+          </div>
+          <div class="flex">
+            <a href="">Docs</a>
+          </div>
+          <div class="flex">
+            <a href="">Updates</a>
+          </div>
+          <div class="flex">
+           <a href="">Blog</a> 
+          </div>
+          <div class="flex">
+            <a href="">Api</a>
+          </div>
+          <div class="flex">
+            <a href="">Extensions</a>
+          </div>
+          <div class="flex">
+            <a href="">FAQ</a>
+          </div>
+          <div class="flex">
+            <a href="">Learn</a>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+            <input type="text" placeholder="Search Docs">
+          </div>
+          <div>
+            <button>Download</button>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div class="banner">
+          <a href="" style="color: #0078d4;">Version 1.92</a>
+          is now available! Read about the new features and fixes from July.
+    </div>
+    <section class="hero">
+      <div class="second-box">
+        <div>
+          <br>
+          <br>
+          <br>
+          <span class="buttonBanner">
+            Free. Built on open source. Runs anywhere.
+          </span>
+          <h2>Code Editing. Redefined.</h2>
+          <button>Download for MacOS</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="lastbox">
+          <div class="lastbox-left">
+            <h3>Code in any language</h3>
+            <p>
+              VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS and HTML, but extensions for others be found in the VS Code Marketplace.
+            </p>
+          </div>
+          <div class="lastbox-right">
+            <div class="column">
+              <p> <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="javascript">JavaScript</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-markdown.png" alt="markdown">Markdown</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="c#">C#</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-java.png" alt="java">Java</p>
+            </div>
+            <div class="column">
+              <p><img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="typescript">TypeScript</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="c++">C++</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-json.png" alt="json">JSON</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="powershell">Powershell</p>
+            </div>
+            <div class="column">
+              <p><img src="https://code.visualstudio.com/assets/home/language-python.png" alt="python">Python</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-html.png" alt="html">HTML</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-php.png" alt="php">PHP</p>
+              <p><img src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="yaml">YAML</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
